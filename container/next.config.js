@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'micro-fron-ends.vercel.app',
+        hostname: 'micro-cardapio-frontend.vercel.app',
         pathname: '/**'
       }
     ]
@@ -24,7 +24,7 @@ const nextConfig = {
         filename: "static/chunks/remoteEntry.js",
 
         remotes: {
-          cardapio: `cardapio@https://micro-fron-ends.vercel.app/_next/static/${
+          cardapio: `cardapio@https://micro-cardapio-frontend.vercel.app/_next/static/${
             isServer ? "ssr/" : "chunks/"
           }remoteEntry.js`,
 

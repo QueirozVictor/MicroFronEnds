@@ -8,7 +8,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'micro-fron-ends.vercel.app/',
+        hostname: 'micro-cardapio-frontend.vercel.app',
         pathname: '/**'
       }
     ]
