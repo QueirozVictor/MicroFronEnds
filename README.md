@@ -103,15 +103,15 @@ O projeto já foi publicado na Vercel. As aplicações são integradas por meio 
 
 Os endereços acima correspondem às URLs utilizadas durante a configuração do projeto. Caso algum domínio seja alterado, as referências correspondentes também deverão ser atualizadas.
 
-### 🖼️ Observação sobre o carregamento das imagens
+### 🖼️ Carregamento das imagens
 
-Neste projeto, as imagens do cardápio são hospedadas no domínio público do Micro Cardápio e consumidas pela aplicação principal (Container).
+As imagens dos produtos são hospedadas publicamente no domínio do Micro Cardápio, utilizando URLs completas para cada arquivo.
 
-Como os caminhos relativos, por exemplo `/Pizza.webp`, são resolvidos a partir da raiz do domínio que está exibindo a página, os endereços das imagens precisam apontar para o domínio que efetivamente hospeda os arquivos quando os componentes são integrados pelo Module Federation.
+Essa abordagem permite que os componentes consumam as imagens independentemente do domínio em que são renderizados, inclusive quando o Micro Cardápio é integrado ao Container por meio do Webpack Module Federation.
 
-Por esse motivo, a configuração atual prioriza o funcionamento integrado em produção. Ao acessar o Micro Cardápio separadamente, as imagens podem não ser carregadas corretamente caso os caminhos utilizados dependam do domínio do Container ou de configurações específicas da integração.
+Como o projeto utiliza o componente `Image` do Next.js, cada aplicação que renderiza essas imagens deve possuir uma configuração adequada em `images.remotePatterns`, permitindo o domínio responsável por hospedá-las.
 
-Essa particularidade faz parte da configuração atual do ambiente de produção e deve ser considerada caso o projeto seja adaptado para execução local ou para funcionar de maneira independente em diferentes domínios.
+**Observação:** o projeto está configurado prioritariamente para o ambiente de produção na Vercel. Caso seja executado localmente ou os domínios sejam alterados, será necessário revisar as URLs das imagens e as configurações de domínio permitidas no Next.js para garantir o carregamento correto em cada ambiente.
 
 ## ⚠️ Executar o projeto localmente
 
