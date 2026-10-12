@@ -9,7 +9,7 @@ export const item = [{
     },
     {
        id: 2,
-        imagem:"/cheesebacon.webp",
+        imagem:"/cheeseBacon.webp",
         nome: 'X-Bacon',
         descricao: 'Pão, hamburguer, alface, tomate, cebola e bacon',
         valor: 25 
