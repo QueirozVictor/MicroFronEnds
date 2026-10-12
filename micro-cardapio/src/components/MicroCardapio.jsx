@@ -8,7 +8,7 @@ export default function Cardapio() {
 
     return(
         <div className={style.base}>
-            <h2 className={style.title}>Cardapio</h2>
+            <h2 className={style.title}>Cardápio</h2>
             
             <ul className={style.list}>
                 {

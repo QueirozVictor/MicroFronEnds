@@ -4,7 +4,7 @@ export const item = [{
         id: 1,
         nome: 'Pizza',
         imagem:"https://micro-fron-ends.vercel.app/Pizza.webp",
-        descricao: 'Queijo, molho de tomate, oregano e azeitonas',
+        descricao: 'Queijo, molho de tomate, orégano e azeitonas',
         valor: 45
     },
     {
