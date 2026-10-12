@@ -7,9 +7,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '3001',
+        protocol: 'https',
+        hostname: 'micro-fron-ends.vercel.app/',
         pathname: '/**'
       }
     ]
@@ -25,11 +24,11 @@ const nextConfig = {
         filename: "static/chunks/remoteEntry.js",
 
         remotes: {
-          cardapio: `cardapio@http://localhost:3001/_next/static/${
+          cardapio: `cardapio@https://micro-fron-ends.vercel.app/_next/static/${
             isServer ? "ssr/" : "chunks/"
           }remoteEntry.js`,
 
-          pedido: `pedido@http://localhost:3002/_next/static/${
+          pedido: `pedido@https://micro-pedido-khaki.vercel.app/_next/static/${
             isServer ? "ssr/" : "chunks/"
           }remoteEntry.js`,
         },
