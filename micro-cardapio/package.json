@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && next dev -p 3001",
-    "build": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && next build",
-    "start": "next start"
+  "dev": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3001",
+  "build": "cross-env NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
+  "start": "next start"
   },
   "dependencies": {
     "@module-federation/nextjs-mf": "^8.8.76",
@@ -17,6 +17,7 @@
     "webpack": "5.95.0"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "webpack-cli": "^6.0.1"
   }
 }
