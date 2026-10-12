@@ -7,9 +7,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '3001',
+        protocol: 'https',
+        hostname: 'micro-fron-ends.vercel.app/',
         pathname: '/**'
       }
     ]
