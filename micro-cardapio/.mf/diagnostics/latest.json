@@ -1,0 +1,30 @@
+{
+  "bundler": {
+    "name": "webpack"
+  },
+  "mfConfig": {
+    "name": "cardapio",
+    "exposes": {
+      "./Cardapio": "./src/components/MicroCardapio",
+      "./App": "./pages/_app.js",
+      "./pages-map": "C:\\pratica-ebac\\projetos\\MicroFrontEnds\\micro-cardapio\\node_modules\\@module-federation\\nextjs-mf\\dist\\src\\loaders\\nextPageMapLoader.js!C:\\pratica-ebac\\projetos\\MicroFrontEnds\\micro-cardapio\\node_modules\\@module-federation\\nextjs-mf\\dist\\src\\loaders\\nextPageMapLoader.js",
+      "./pages-map-v2": "C:\\pratica-ebac\\projetos\\MicroFrontEnds\\micro-cardapio\\node_modules\\@module-federation\\nextjs-mf\\dist\\src\\loaders\\nextPageMapLoader.js?v2!C:\\pratica-ebac\\projetos\\MicroFrontEnds\\micro-cardapio\\node_modules\\@module-federation\\nextjs-mf\\dist\\src\\loaders\\nextPageMapLoader.js",
+      "./pages/index": "./src/pages/index.js"
+    }
+  },
+  "latestErrorEvent": {
+    "code": "BUILD-001",
+    "message": "Failed to find expose module. #BUILD-001\nargs: {\"exposeModules\":[{\"name\":\"./App\",\"module\":null,\"request\":\"./pages/_app.js\"}],\"FEDERATION_WEBPACK_PATH\":\"C:\\\\pratica-ebac\\\\projetos\\\\MicroFrontEnds\\\\micro-cardapio\\\\node_modules\\\\webpack\\\\lib\\\\index.js\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/build#build-001",
+    "args": {
+      "exposeModules": [
+        {
+          "name": "./App",
+          "module": null,
+          "request": "./pages/_app.js"
+        }
+      ],
+      "FEDERATION_WEBPACK_PATH": "C:\\pratica-ebac\\projetos\\MicroFrontEnds\\micro-cardapio\\node_modules\\webpack\\lib\\index.js"
+    },
+    "timestamp": 1791278345271
+  }
+}

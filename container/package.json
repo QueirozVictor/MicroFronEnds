@@ -1,0 +1,21 @@
+{
+  "name": "container",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && next dev",
+    "build": "set NEXT_PRIVATE_LOCAL_WEBPACK=true && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "8.8.76",
+    "enhanced-resolve": "5.17.1",
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "webpack": "5.95.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "6.0.1"
+  }
+}
