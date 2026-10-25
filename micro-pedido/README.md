@@ -23,6 +23,26 @@ npm install
 
 ### Desenvolvimento
 
+Para executar o projeto em ambiente local sera necessário fazer algumas alterações nas configurações do projeto.
+```js
+//O projeto foi atualizado para permitir consumir imagens tanto em ambiente de produção quando de forma local.
+    images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'micro-cardapio-frontend.vercel.app',
+        pathname: '/**'
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3001',
+        pathname: '/**'
+      }
+    ]
+  },
+```
+
 ```bash
 npm run dev
 ```

@@ -113,6 +113,12 @@ Como o projeto utiliza o componente `Image` do Next.js, cada aplicação que ren
 
 **Observação:** o projeto está configurado prioritariamente para o ambiente de produção na Vercel. Caso seja executado localmente ou os domínios sejam alterados, será necessário revisar as URLs das imagens e as configurações de domínio permitidas no Next.js para garantir o carregamento correto em cada ambiente.
 
+## Visualização do Projeto
+
+<p align="center">
+    <img src="./public/imagem-do-projeto.webp" alt="Imagem do projeto" width="600" >
+</p>
+
 ## ⚠️ Executar o projeto localmente
 
 **Atenção:** este repositório está configurado para integrar aplicações publicadas em produção. Clonar o repositório e iniciar os projetos localmente não garante que a integração funcione automaticamente.

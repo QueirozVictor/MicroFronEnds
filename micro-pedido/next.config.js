@@ -10,6 +10,13 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'micro-cardapio-frontend.vercel.app',
         pathname: '/**'
+      },
+      //Permite acesso local daas imagens.
+      {
+        protocol:'http',
+        hostname: 'localhost',
+        port: '3001',
+        pathname:'/**'
       }
     ]
   },
